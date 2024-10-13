@@ -1,0 +1,86 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f8ff; /* Light background color */
+    color: #333; /* Dark text color */
+}
+
+.container {
+    max-width: 600px; /* Max width for the app container */
+    margin: auto; /* Center the container */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: #ffffff; /* White background for the container */
+}
+
+/* Input and Button Styles */
+input[type="text"] {
+    width: calc(80% - 20px); /* Responsive width for the input */
+    padding: 10px;
+    margin-right: 10px; /* Space between input and button */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+}
+
+button {
+    padding: 10px 15px;
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white; /* White text */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Weather Info Styles */
+#weather-info {
+    margin-top: 20px; /* Space above weather info */
+    padding: 15px;
+    border: 1px solid #e0e0e0; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background for weather info */
+}
+
+/* Favorites Styles */
+#favorites {
+    margin-top: 20px; /* Space above favorites section */
+}
+
+#favorites h3 {
+    margin: 0; /* Remove default margin */
+}
+
+#favorites-list {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0; /* Remove padding */
+}
+
+#favorites-list li {
+    padding: 5px;
+    cursor: pointer; /* Pointer cursor for list items */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+#favorites-list li:hover {
+    background-color: #e0e0e0; /* Highlight on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    input[type="text"] {
+        width: 100%; /* Full width on smaller screens */
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 10px; /* Space below input */
+    }
+
+    button {
+        width: 100%; /* Full width for buttons on smaller screens */
+    }
+}
